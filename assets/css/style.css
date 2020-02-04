@@ -107,10 +107,14 @@ li {
   Header styling starts here
 =================================*/
 
-
-
-
-
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid;
+  color: burlywood;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
 
 /*=================================
   Header styling ends here
@@ -120,12 +124,42 @@ li {
   main styling starts here
 =================================*/
 
+main {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 50%;
+  margin: 30px auto;
+  text-transform: capitalize;
+  font-size: 24px;
+  flex-wrap: wrap;
+}
 
+a {
+  padding: 10px 20px;
+  border: 1px solid;
+  background: #ccc;
+  color: #000;
+  font-size: 16px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
 
+a:hover {
+  background: #000;
+  color: #ccc;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
 
+form {
+  margin: 30px;
+  border: 1px solid;
+}
 
-
-
+.form-group { margin: 20px;}
+input { padding: 8px;}
 
 /*=================================
   main styling ends here
@@ -135,11 +169,31 @@ li {
   footer styling starts here
 =================================*/ 
 
+footer {
+  padding: 20px 0;
+  border-top: 1px solid;
+  color: burlywood;
+  font-size: 24px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  text-align: center;
+}
 
-
-
-
-
+p {
+  width: 50%;
+  margin: 0px auto;
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+  text-transform: capitalize;
+}
 
  /*=================================
   footer styling ends here
