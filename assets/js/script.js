@@ -1,9 +1,9 @@
 // /* Author: Aniket*/
-
+'use strict'
 var enterNumber = document.querySelector('.form-group input');
-document.querySelector('#Submit').addEventListener('click',mobileDigits);
+document.querySelector('#Submit').addEventListener('click', mobileDigits);
+
 function mobileDigits() {
-  debugger;
   var mobDigits = {
     0 : " ",
     1 : " ",
@@ -16,7 +16,8 @@ function mobileDigits() {
     8 : ["t","u","v"],
     9 : ["w","x","y","z"]
   }
-  var matchFound = [''];
+  debugger;
+  var matchFound = [' '];
   for (var i = 0; i < enterNumber.value.length; i++) {
       var digit = enterNumber.value[i];
       var letters = mobDigits[digit];
@@ -32,5 +33,6 @@ function mobileDigits() {
     }
     matchFound = storeDigit;
   }
+  
   document.querySelector('footer p:nth-child(2)').innerHTML = matchFound;
 }
